@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:not(i){
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: rgba(188, 188, 188, 0.292);
+}
+
+h1 {
+    margin: 150px auto 30px;
+    text-align: center;
+    color: #6f6868;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 90% ;
+    min-width: 50%;
+    margin: 10px auto 50px;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px gray;
+}
+
+.search-box {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    min-width: 70%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.search-box input:focus {
+    background-color: #fff;
+}
+
+.search-box input::placeholder {
+    font-size: 16px;
+}
+
+#search-btn {
+    min-width: 30%;
+    padding: 6px;
+    background-color: #6f6868;
+    color: #fff;
+    height: 50px;
+    border: none;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.result {
+    position: relative;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #6f6868;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    text-transform: capitalize;
+}
+
+.result button {
+    background-color: transparent;
+    color: #030303;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #6f6868;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning {
+    color: #03030397;
+}
+
+.word-example {
+    color:#03030377;
+    font-style: italic;
+    border-left: 3px solid #6f6868;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+@media (max-width:600px) {
+    .search-box {
+        width: 100%;
+    }
+}
